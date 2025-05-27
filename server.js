@@ -1,4 +1,10 @@
 import express from "express";
+import cors from "cors";
+
+const app = express();
+app.use(cors());            //  ← adds ‘Access-Control-Allow-Origin: *’
+app.use(express.json());
+
 
 const cities = ["Paris", "Tokyo", "Cairo"];
 const active = new Map();
