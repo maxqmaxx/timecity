@@ -8,8 +8,7 @@ app.use(express.json());
 
 const cities = ["Paris", "Tokyo", "Cairo"];
 const active = new Map();
-const app = express();
-app.use(express.json());
+
 
 app.post("/api/next-city", (req, res) => {
   const { call, message } = req.body;
